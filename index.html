@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="b1.png" type="image/x-icon">
+    <title>Grab Ur Web-icon</title>
+</head>
+<body>
+    <div class="boxbody">
+        <div id="boxheading">
+            <h2 id="heading1">Grab Your Web-Icon</h2><br>
+        </div>
+        <div id="iconselection">
+
+            <!-- <div id="iconlabel">
+                <label for="mysize" id="mysizelabel">Select Icon Size: </label>
+            </div> -->
+
+            <div id="iconselector">
+                <select id="mysize">
+                    <option value="title">SELECT ICON SIZE</option>
+                    <option value="default">Default</option>
+                    <option value="16">16 X 16 </option>
+                    <option value="32">32 X 32 </option>
+                    <option value="48">48 X 48 </option>
+                    <option value="64">64 X 64 </option>
+                    <option value="128">128 X 128 </option>
+                </select><br>
+            </div>
+        </div>
+
+        <div id="urlinput">
+            <input type="text" name="urlname" id="myurl" placeholder="eg: https://www.google.com "><br>
+        </div>
+        <div id="submitbtn"> 
+            <input type="submit" value="GRAB" id="grabbtn" onClick="grabbing()"  onmousedown="animatefn('grabbtn')" onmouseup="normalfn('grabbtn')">
+        </div>
+
+    </div>
+        <div id="displayimagebox" >
+            <img src="" alt=""  id="displayimg">
+        </div>
+
+    <script src="./logic.js"></script>
+</body>
+</html>
